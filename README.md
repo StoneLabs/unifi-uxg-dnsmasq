@@ -1,7 +1,7 @@
 # unifi-uxg-dnsmasq
-Script to bring static dns to unifi uxg. 
+Script to bring static DNS entires to unifi UXG. 
 
-Basically, you could just add your static entries to `/run/dnsmasq.conf.d/host.dns`, but that is not persistant to we automatically create a softlink with a bit of bash scriptery. Nothing too complicated so dont worry.
+Basically, you could just add your static entries to `/run/dnsmasq.conf.d/host.dns`. Sadly, that's not persistent so we need to automatically create a softlink. Nothing too complicated so don't worry.
 
 ## 1. Scripts
 
@@ -99,6 +99,10 @@ Don't forget to reload cron so the cronjob actually runs ^^
 ```~# service cron reload```
 
 ## 3. Done, enjoy :)
+
+# How to add entries later on
+
+Just edit `/data/custom/host.dns` and run `/data/custom/restartdns.sh` to "apply" the changes.
 
 # License 
 This is free and unencumbered software released into the public domain.
