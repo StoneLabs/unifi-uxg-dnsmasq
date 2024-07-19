@@ -6,6 +6,7 @@ Basically, you could just add your static entries to `/run/dnsmasq.conf.d/host.d
 ## 1. Scripts
 
 The following script adds a softlink from `/run/dnsmasq.conf.d/host.dns` (which is not reboot persistent) to `/data/custom/host.dns`.
+Some devices appear to use a different `DNSMASQ_HOSTFILE`. See [#1](https://github.com/StoneLabs/unifi-uxg-dnsmasq/issues/1) for more details.
 
 ### /data/custom/dnsinject.sh
 ```sh
