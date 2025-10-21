@@ -16,8 +16,8 @@ Some devices appear to use a different `DNSMASQ_HOSTFILE`. See [#1](https://gith
 ## Original credit for idea: https://ubiquiti-networks-forum.de/board/thread/8876-dns-alias-f%C3%BCr-uxg-lite/
 
 
-DNSMASQ_CONF="/run/dnsmasq.conf.d/shared.conf"
-DNSMASQ_HOSTFILE="/run/dnsmasq.conf.d/host.dns"
+DNSMASQ_CONF="/run/dnsmasq.dhcp.conf.d/shared.conf"
+DNSMASQ_HOSTFILE="/run/dnsmasq.dhcp.conf.d/host.dns"
 DNSMASQ_SOURCE="/data/custom/host.dns"
 
 
